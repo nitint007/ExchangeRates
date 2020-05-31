@@ -6,13 +6,13 @@ Background:
 	Given Foreign Exchange Rates API is accessible
 	
 Scenario: Assert the correct response with latest date data
-	When Hit the API with end point as "/latest?base=USD"
+	When Hit the API with end point as "?base=USD"
 	Then API should respond with base value "USD"
 	
 Scenario: Validate results on providing incorrect/incomplete endpoint
-	When Hit the API with end point as "latest?base=XXX"
+	When Hit the API with end point as "?base=123"
 	Then Should respond with status code as 400
-	And Error message should be displayed as "Base 'XXX' is not supported."
+	And Error message should be displayed as "Base '123' is not supported."
 	
 Scenario: Assert the success status of past conversion rates response
 	When Hit the API with end point as "/2010-01-12"

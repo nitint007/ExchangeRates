@@ -23,7 +23,7 @@ import cucumber.api.junit.Cucumber;
 		"html:target/cucumber-reports"}, 
 features = "src/test/resources/features", 
 tags = {" @UAT" }, 
-glue = "stepDefinitions", 
+glue = "stepDefinitions",
 monochrome = true, 
 strict = false)
 

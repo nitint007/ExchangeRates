@@ -69,7 +69,6 @@ public class Acceptance extends Setup {
 		// Checking if value retrieved is as expected
 		Assert.assertEquals(expectedStatusCode, actualStatusCode);
 
-		// response.then().assertThat().statusCode(expectedStatusCode);
 		System.out.println("Response code recieved : " + expectedStatusCode);
 	}
 

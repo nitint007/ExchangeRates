@@ -9,9 +9,8 @@ Scenario Outline:
 	When Hit the API with end point as "<endPoint>"
 	Then Should respond with status code as <statusCode>
 	
-	Examples: 
-		| endPoint                    | statusCode |
-		| /latest                     |     200    |
-		| /latest?symbols=USD,GBP     |     200    |
-		| /latest?base=USD            |     200    |
-		| /latest?base=USD&symbols=GBP|     200    |
+	Examples:
+		| endPoint             | statusCode |
+		| ?symbols=USD,GBP     |     200    |
+		| ?base=USD            |     200    |
+		| ?base=USD&symbols=GBP|     200    |
