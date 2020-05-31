@@ -26,7 +26,7 @@ public class Acceptance extends Setup {
 	 */
 	@Given("^Foreign Exchange Rates API is accessible$")
 	public void apiAccessible() throws Throwable {
-		System.out.println("API under test: " + BASE_URI);
+		System.out.println(" ********** API under test: " + BASE_URI);
 
 		// Specifying URI to test
 		RestAssured.baseURI = BASE_URI;
@@ -49,7 +49,7 @@ public class Acceptance extends Setup {
 	 */
 	@When("^Hit the API with end point as \"([^\"]*)\"$")
 	public void hitEndpoint(String endPoint) throws Throwable {
-		System.out.println("Hiting API with specific endpoint " + endPoint + " and getting response");
+		System.out.println(" ********** Hiting API with specific endpoint " + endPoint + " and getting response");
 
 		// Specifying URI to test with end-point
 		RestAssured.baseURI = BASE_URI+endPoint;
@@ -75,14 +75,7 @@ public class Acceptance extends Setup {
 
 	@Then("^API should respond with base value \"([^\"]*)\"$")
 	public void getBaseValue(String expectedBaseValue) throws Throwable {
-		System.out.println("*************** Verifying base values from Response **********");
-
-		// Specifying URI to test
-		RestAssured.baseURI = BASE_URI;
-		httpRequest = RestAssured.given();
-
-		// Getting response through get method
-		response = httpRequest.get();
+		System.out.println(" *************** Verifying base values from Response **********");
 
 		// Retrieve the body of the Response
 		body = response.getBody();
@@ -97,7 +90,7 @@ public class Acceptance extends Setup {
 
 	@Then("^Error message should be displayed as \"([^\"]*)\"$")
 	public void verifyErrorMessage(String expectedErrorMessage) throws Throwable {
-		System.out.println("Verifying error message for incorrect/incomplete endpoint");
+		System.out.println(" *************** Verifying error message for incorrect/incomplete endpoint **********");
 
 		// Retrieve the body of the Response
 		body = response.getBody();
