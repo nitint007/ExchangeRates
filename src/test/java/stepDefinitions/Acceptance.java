@@ -1,5 +1,5 @@
 /**
- * 
+ * The class describes methods of feature file scenarios i.e. implementation details
  */
 package stepDefinitions;
 
@@ -12,13 +12,11 @@ import io.restassured.RestAssured;
 
 /**
  * @author nitinthite
- * 
- * The class describes methods of feature file scenarios i.e. implementation details
  */
 public class Acceptance extends Setup {
 
 	// REST API Under test
-	protected String BASE_URI = "https://api.ratesapi.io/api/latest";
+	protected static final String BASE_URI = "https://api.ratesapi.io/api/latest";
 
 	// protected RequestSpecification httpRequest;
 	private int actualStatusCode;

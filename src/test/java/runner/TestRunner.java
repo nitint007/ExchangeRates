@@ -19,15 +19,16 @@ import cucumber.api.junit.Cucumber;
  * Available tags in suite : @LatestDateRates, @UAT, @PastConversionRates
  */
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = { "pretty", "html:target/html/" },
+@CucumberOptions(plugin = { "pretty", "html:target/html/",
+		"html:target/cucumber-reports"}, 
 features = "src/test/resources/features", 
-tags = {"@UAT"},
-glue = "stepDefinitions",
-monochrome = true,
+tags = {" @UAT" }, 
+glue = "stepDefinitions", 
+monochrome = true, 
 strict = false)
 
 /*
- * The first point which triggers the automation suite selected
+ * The Entry point which triggers the automation suite selected
  */
 public class TestRunner {
 
