@@ -31,4 +31,5 @@ The test framework is:
 6. Wait until expected suite is executed and observe the results
 *<>*<>**<>*<>**<>*<>**<>*<>**<>*<>**<>*<>**<>*<>**<>*<>**<>*<>**<>*<>**<>*<>**<>*<>**<>*<>**<>*<>*
 ** Reporting.
-> For the time being, basic html reporting is used.
+> For the time being, basic html reporting is available.
+*<>*<>**<>*<>**<>*<>**<>*<>**<>*<>**<>*<>**<>*<>**<>*<>**<>*<>**<>*<>**<>*<>**<>*<>**<>*<>**<>*<>*
