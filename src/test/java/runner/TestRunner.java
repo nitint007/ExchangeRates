@@ -15,12 +15,14 @@ import cucumber.api.junit.Cucumber;
 /*
  * PLZ read "https://docs.cucumber.io/cucumber/api/#running-cucumber" for more
  * details on cucumber options
+ * 
+ * Available tags in suite : @LatestDateRates, @UAT, @PastConversionRates
  */
 @RunWith(Cucumber.class)
 @CucumberOptions(plugin = { "pretty", "html:target/html/" },
 features = "src/test/resources/features", 
 tags = {"@UAT"},
-glue = "stepDefinitions", 
+glue = "stepDefinitions",
 monochrome = true,
 strict = false)
 

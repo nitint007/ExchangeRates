@@ -14,7 +14,7 @@ Scenario: Validate results on providing incorrect/incomplete endpoint
 	Then Should respond with status code as 400 
 	And Error message should be displayed as "Base 'XXX' is not supported." 
 	
-Scenario: To assert the success status of past conversion rates response 
+Scenario: Assert the success status of past conversion rates response 
 	When Hit the API with end point as "/2010-01-12" 
 	Then Should respond with status code as 200 
 	
